@@ -219,15 +219,7 @@ def main():
     # 2) duplicate MRNS
     if len(merged['MRN'].values) != len(list(set(merged['MRN'].values))):
         raise Exception('Duplicate MRNs within a sheet - was not handled by dropping duplicates or filtering')
-        # mrns = list(set(merged['MRN'].to_list()))
-        # for i in range(len(mrns)):
-        #     m = mrns[i]
-        #     d_mrn = merged.loc[merged['MRN'] == m]
-        #     if len(d_mrn) > 1 :
-                
-    # 3) duplicate emails
-    #if len(merged['EmailAddress'].values) != len(list(set(merged['EmailAddress'].values))):
-     #   raise Exception('Duplicate MRNs within a sheet - was not handled by dropping duplicates or filtering')
+
     
     merged_2.to_csv(os.path.join(os.path.dirname(os.path.realpath(__file__)),'./qualtrics_mrn.csv'), index=False)
   
