@@ -29,7 +29,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 #local
-from combine_sheets_v4 import get_most_recent, archive
+from old_versions.combine_sheets_v4 import get_most_recent, archive
 
 
 def open_survey(browser, headless):
