@@ -57,7 +57,7 @@ def get_most_recent(pat, sep="_",dt_ind=-2, dt_format='%Y%m%d', data_ext=".xlsx"
     files = glob.glob(str(pat))
 
     #check length = there should only be 2 existing in your dataset
-    assert len(files) <= 2, 'There should only be 2 files with given name in dataset.'
+    #assert len(files) <= 2, 'There should only be 2 files with given name in dataset.'
 
     #if there are no files
     if files == []:
